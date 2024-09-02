@@ -1,5 +1,6 @@
 import React from "react";
 import Profile_Picture from "./ProfilePicture";
+import Social_Media from "./Social_Media";
 
 const Intro = () => {
   return (
@@ -20,6 +21,7 @@ const Intro = () => {
           >
             About Me
           </button>
+          <Social_Media/>
         </div>
         <div className="w-fit ">
           <Profile_Picture />
