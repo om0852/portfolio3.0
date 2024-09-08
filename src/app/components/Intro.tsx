@@ -1,16 +1,20 @@
-"use client"
+"use client";
 import React, { useEffect } from "react";
 import Profile_Picture from "./ProfilePicture";
 import Social_Media from "./Social_Media";
-import Typewriter from 'typewriter-effect/dist/core';
+import Typewriter from "typewriter-effect/dist/core";
 
 const Intro = () => {
   useEffect(() => {
     const typewriter = new Typewriter("#typewriter", {
-      strings: ["Fullstack Developer", "Blockchain Enthusiast", "UI/UX Designer"],
+      strings: [
+        "Fullstack Developer",
+        "Blockchain Enthusiast",
+        "UI/UX Designer",
+      ],
       autoStart: true,
       loop: true, // Optional: to repeat the animation in a loop
-      delay: 75,  // Adjust the typing speed (ms per character)
+      delay: 75, // Adjust the typing speed (ms per character)
       deleteSpeed: 50, // Adjust the deletion speed
     });
 
