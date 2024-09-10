@@ -41,7 +41,7 @@ const Skill = () => {
         </div>
       </div>
       <div>
-        <div className="mx-auto w-[90%] h-[50vh] border-[2px] border-red-700 rounded-md bg-slate-600">
+        <div className="mx-auto w-[90%] h-[auto] border-[2px] border-red-700 rounded-md bg-slate-600">
           <div className="scroller mx-auto  ">
             <div className="my-8">
               <Marquee >

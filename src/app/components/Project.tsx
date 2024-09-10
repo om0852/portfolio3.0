@@ -76,7 +76,7 @@ const Project = () => {
           <div className="w-[10vh] h-1 bg-red-500 "></div>
         </div>
       </div>
-      <div className="grid h-auto py-6 gap-6 gap-y-6 grid-row-auto grid-cols-3 place-items-center overflow-x-auto px-10">
+      <div className="grid h-auto py-6 gap-6 gap-y-6 grid-row-auto max-sm:grid-cols-1 grid-cols-3 place-items-center overflow-x-auto px-10">
         {projectData.map((data)=>(
           <ProjectCard {...data}/>
 
