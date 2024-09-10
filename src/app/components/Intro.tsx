@@ -28,9 +28,9 @@ const Intro = () => {
         className="w-full h-[100vh] absolute top-0 left-0"
         alt="background"
       />
-      <div className="relative w-[80%] h-[50vh] mx-auto text-white flex items-center">
+      <div className="relative w-[80%] h-[50vh] mx-auto text-white  flex md:flex-row-reverse items-center">
         <div className="w-[100%] h-[50%] grid place-items-start px-6">
-          <h1 className="w-[100%] text-6xl">
+          <h1 className="w-[100%] text-xl md:text-6xl">
             Hi There <br /> I'm{" "}
             <span className="text-red-500 font-semibold">Om Salunke</span>
           </h1>

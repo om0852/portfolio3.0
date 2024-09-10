@@ -78,3 +78,33 @@ background: linear-gradient(315deg,#00ccff,#d400d4);
 
 
 }
+
+@media screen and (max-width:786px) {
+  .box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0,0, 0, 0.5);
+  border-radius: 50%;
+  overflow: hidden;
+  
+  }
+  .box::after{
+    content: "";
+    position: absolute;
+    inset: 4px;
+    border-radius: 50%;
+    background-color: #162052;
+    z-index: 1;
+        overflow: hidden;
+  
+  }
+  .box::before{
+    content: "";
+    position: absolute;
+    inset: -10px 20px;
+  background: linear-gradient(315deg,#00ccff,#d400d4);
+    transition: 0.5s;
+    animation: spinner 4s linear infinite;
+  }
+}
