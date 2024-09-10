@@ -5,7 +5,7 @@ import Link from "next/link";
 const About = () => {
   const [selectDetails, setSelectDetails] = useState(0);
   return (
-    <section className="w-full h-[100vh] bg-slate-900">
+    <section className="w-full h-[auto] pb-10 bg-slate-900">
       <div className="headline grid place-items-center mb-10 text-white relative">
         <div>
           About Me
@@ -27,8 +27,8 @@ const About = () => {
           applications, I’m always exploring the latest technologies to enhance
           my skills and deliver impactful solutions.
         </p>
-        <div className=" h-auto pt-6 flex flex-row w-full">
-          <div className="personal-info grid grid-rows-6 grid-cols-2 w-[70%]">
+        <div className=" h-auto pt-6 flex max-sm:flex-col flex-row w-full">
+          <div className="personal-info grid grid-rows-6 max-sm:grid-cols-1 grid-cols-2 max-sm:w-[100%] w-[70%]">
             <div className=" w-fit pb-2 mb-4 border- border-b-2 gray-500">
               <strong className="pr-2">Birthday:</strong>5 sep 2004
             </div>
@@ -56,7 +56,7 @@ const About = () => {
             </div>
             <button
               type="button"
-              className="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900 w-[30vh]"
+              className="max-sm:w-full focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900 w-[30vh]"
             >
               <a href={"./OM_SALUNKE.pdf"} download="OM-SALUNKE_RESUME.pdf">
                 Download CV
@@ -66,7 +66,7 @@ const About = () => {
             href={"https://www.linkedin.com/in/om-salunke-81bb63292"}
             target="_blank"
               type="button"
-              className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900 w-[30vh]"
+              className="max-sm:w-full  text-center max-sm:mb-10 focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900 w-[30vh]"
             >
               Hire Me!
             </Link>
