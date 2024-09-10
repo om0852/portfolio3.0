@@ -28,13 +28,13 @@ const Intro = () => {
         className="w-full h-[100vh] absolute top-0 left-0"
         alt="background"
       />
-      <div className="relative w-[80%] h-[50vh] mx-auto text-white  flex md:flex-row-reverse items-center">
-        <div className="w-[100%] h-[50%] grid place-items-start px-6">
-          <h1 className="w-[100%] text-xl md:text-6xl">
+      <div className="relative max-sm:w-[95%] w-[80%] h-[50vh] mx-auto text-white  flex max-sm:flex-col-reverse items-center">
+        <div className="max-sm:pt-10 w-[100%] h-[50%] grid place-items-start px-6">
+          <h1 className="w-[100%] max-sm:text-3xl text-6xl">
             Hi There <br /> I'm{" "}
             <span className="text-red-500 font-semibold">Om Salunke</span>
           </h1>
-          <h1 className="w-[100%] text-4xl">
+          <h1 className="w-[100%] max-sm:text-3xl text-4xl">
             A{" "}
             <span className="text-green-500 font-semibold" id="typewriter">
               {/* This span will contain the dynamic text from Typewriter */}

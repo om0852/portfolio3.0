@@ -7,7 +7,7 @@ import Project from "./components/Project";
 export default function Home() {
   return (
     <>
-    <main className="flex min-h-screen flex-col items-center w-full justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center w-full justify-between pt-20">
       <Intro />
     </main>
       <About/>
