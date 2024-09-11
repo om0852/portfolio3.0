@@ -36,7 +36,7 @@ const About = () => {
               <strong className="pr-2">Age:</strong>20
             </div>
             <div className=" w-fit pb-2 mb-4 border- border-b-2 gray-500">
-              <strong className="pr-2">College:</strong>Dr. D. Y. Patil College
+              <strong className="pr-2">College:</strong>D.Y.Patil College
               of Engineering
             </div>
             <div className=" w-fit pb-2 mb-4 border- border-b-2 gray-500">
