@@ -31,7 +31,7 @@ const Intro = () => {
       <div className="relative max-sm:w-[95%] pt-[20vh] w-[80%] h-[50vh] mx-auto text-white  flex max-sm:flex-col-reverse items-center">
         <div className="max-sm:pt-10 w-[100%] h-[50%] grid place-items-start px-6">
           <h1 className="w-[100%] max-sm:text-3xl text-6xl">
-            Hi There <br /> I'm{" "}
+            Hi There <br /> I&lsquo;m{" "}
             <span className="text-red-500 font-semibold">Om Salunke</span>
           </h1>
           <h1 className="w-[100%] max-sm:text-3xl text-4xl">

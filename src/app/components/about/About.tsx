@@ -16,7 +16,7 @@ const About = () => {
       </div>
       <article className="px-8 text-white ">
         <h1 className="text-4xl my-4">
-          I'm <span className="text-orange-400 my-4">Om Sachin Salunke</span>
+          I&lsquo;m <span className="text-orange-400 my-4">Om Sachin Salunke</span>
         </h1>
         <p className="text-md">
           A passionate developer from Malegaon. I specialize in MERN stack
