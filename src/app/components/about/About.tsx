@@ -5,7 +5,7 @@ import Link from "next/link";
 const About = () => {
   const [selectDetails, setSelectDetails] = useState(0);
   return (
-    <section className="w-full h-[auto] pb-10 bg-slate-900">
+    <section id="about" className="w-full h-[auto] pb-10 bg-slate-900">
       <div className="headline grid place-items-center mb-10 text-white relative">
         <div>
           About Me

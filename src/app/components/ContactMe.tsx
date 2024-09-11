@@ -1,40 +1,47 @@
-"use client"
-import { useState } from 'react';
-import { FiSend } from 'react-icons/fi';
+"use client";
+import axios from "axios";
+import { useState } from "react";
+import toast from "react-hot-toast";
+import { FiSend } from "react-icons/fi";
 
 const ContactPage = () => {
-  const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [message, setMessage] = useState('');
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e:any) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulating form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setEmail('');
-      setSubject('');
-      setMessage('');
-    }, 2000);
+    axios
+      .post("/api/contact", { email, body: message, subject })
+      .then((res) => {
+        toast.success("Send Successfully")
+        // Simulating form submission
+        setIsSubmitting(false);
+        setEmail("");
+        setSubject("");
+        setMessage("");
+      });
   };
 
   return (
     <div className="min-h-screen bg-gray-900 flex flex-col md:flex-row items-center justify-center p-4 md:p-8">
-
       <div className="w-full md:w-1/2 max-w-md">
-      <div className="headline grid place-items-center mb-10 text-white relative">
-        <div>
-          Contact Me
-          <div className="w-[20vh] h-1 bg-red-500 mb-1"></div>
-          <div className="w-[15vh] h-1 bg-blue-500 mb-1"></div>
-          <div className="w-[10vh] h-1 bg-green-500"></div>
+        <div className="headline grid place-items-center mb-10 text-white relative">
+          <div>
+            Contact Me
+            <div className="w-[20vh] h-1 bg-red-500 mb-1"></div>
+            <div className="w-[15vh] h-1 bg-blue-500 mb-1"></div>
+            <div className="w-[10vh] h-1 bg-green-500"></div>
+          </div>
         </div>
-      </div>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-400 mb-2">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-400 mb-2"
+            >
               Email Address
             </label>
             <input
@@ -48,7 +55,10 @@ const ContactPage = () => {
             />
           </div>
           <div>
-            <label htmlFor="subject" className="block text-sm font-medium text-gray-400 mb-2">
+            <label
+              htmlFor="subject"
+              className="block text-sm font-medium text-gray-400 mb-2"
+            >
               Subject
             </label>
             <input
@@ -62,7 +72,10 @@ const ContactPage = () => {
             />
           </div>
           <div>
-            <label htmlFor="message" className="block text-sm font-medium text-gray-400 mb-2">
+            <label
+              htmlFor="message"
+              className="block text-sm font-medium text-gray-400 mb-2"
+            >
               Message
             </label>
             <textarea
@@ -78,12 +91,30 @@ const ContactPage = () => {
           <button
             type="submit"
             disabled={isSubmitting}
-            className={`w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-200 ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`}
+            className={`w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-200 ${
+              isSubmitting ? "opacity-50 cursor-not-allowed" : ""
+            }`}
           >
             {isSubmitting ? (
-              <svg className="animate-spin h-5 w-5 mr-3 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              <svg
+                className="animate-spin h-5 w-5 mr-3 text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  className="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                ></circle>
+                <path
+                  className="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                ></path>
               </svg>
             ) : (
               <>

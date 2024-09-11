@@ -44,13 +44,13 @@ const Project = () => {
           title: "Twitter Clone",
           link: "https://github.com/om0852/full-stack-twitter-clone-",
           description: "A full-stack clone of Twitter with features such as user authentication, posting, and real-time updates.",
-          img: "./project/twitter.jpg",
+          img: "./project/twitter.png",
         },
         {
           title: "Get Me a Chai",
           link: "https://github.com/om0852/get-me-a-chai",
           description: "A simple web application to order and deliver chai, focusing on user convenience and fast delivery.",
-          img: "./project/getmechai.jpg",
+          img: "./project/getmechai.png",
         },
         // {
         //   title: "Temple Ticket Booking System",
