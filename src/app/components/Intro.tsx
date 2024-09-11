@@ -22,13 +22,13 @@ const Intro = () => {
   }, []);
 
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-[100vh] max-sm:h-[80vh]">
       <img
         src="./images/bg2.jpg"
-        className="w-full h-[100vh] absolute top-0 left-0"
+        className="w-full h-[100vh] max-sm:h-[80vh] absolute top-0 left-0"
         alt="background"
       />
-      <div className="relative max-sm:w-[95%] w-[80%] h-[50vh] mx-auto text-white  flex max-sm:flex-col-reverse items-center">
+      <div className="relative max-sm:w-[95%] pt-[20vh] w-[80%] h-[50vh] mx-auto text-white  flex max-sm:flex-col-reverse items-center">
         <div className="max-sm:pt-10 w-[100%] h-[50%] grid place-items-start px-6">
           <h1 className="w-[100%] max-sm:text-3xl text-6xl">
             Hi There <br /> I'm{" "}

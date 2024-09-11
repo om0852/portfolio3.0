@@ -3,16 +3,18 @@ import Intro from "./components/Intro";
 import About from "./components/about/About";
 import Skill from "./components/Skill";
 import Project from "./components/Project";
+import MyService from "./components/MyServices";
+import ContactPage from "./components/ContactMe";
 
 export default function Home() {
   return (
     <>
-    <main className="flex min-h-screen flex-col items-center w-full justify-between pt-20">
       <Intro />
-    </main>
       <About/>
       <Skill/>
       <Project/>
+      <MyService/>
+      <ContactPage/>
     </>
   );
 }
