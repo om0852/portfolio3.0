@@ -30,7 +30,7 @@ const About = () => {
         <div className=" h-auto pt-6 flex max-sm:flex-col flex-row w-full">
           <div className="personal-info grid grid-rows-6 max-sm:grid-cols-1 grid-cols-2 max-sm:w-[100%] w-[70%]">
             <div className=" w-fit pb-2 mb-4 border- border-b-2 gray-500">
-              <strong className="pr-2">Birthday:</strong>5 sep 2004
+              <strong className="pr-2">Birthday:</strong>21 sep 2004
             </div>
             <div className=" w-fit pb-2 mb-4 border- border-b-2 gray-500">
               <strong className="pr-2">Age:</strong>20
