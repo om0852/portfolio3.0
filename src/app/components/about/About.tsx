@@ -46,7 +46,7 @@ const About = () => {
               <strong className="pr-2">City:</strong>Malegaon
             </div>
             <div className=" w-fit pb-2 mb-4 border- border-b-2 gray-500">
-              <strong className="pr-2">Email:</strong>salunkeom474@gmail
+              <strong className="pr-2">Email:</strong>salunkeom474@gmail.com
             </div>
             <div className=" w-fit pb-2 mb-4 border- border-b-2 gray-500">
               <strong className="pr-2">Phone No:</strong>+918390471333
