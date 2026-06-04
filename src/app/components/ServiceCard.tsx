@@ -18,7 +18,7 @@ const ServiceCard = ({
       }`}
     >
       <h1 className="w-full flex flex-row items-center gap-4 text-xl justify-center p-4">
-        <img src={img} width={50} height={50} />
+        <img src={img} width={50} height={50} alt={title} loading="lazy" />
         <span
           className={`font-bold ${
             index % 2 == 0 ? " text-white" : "text-black"

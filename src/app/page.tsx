@@ -9,6 +9,12 @@ import { Toaster } from "react-hot-toast";
 import Loader from "./components/Loader";
 import { useEffect, useState } from "react";
 
+export const metadata = {
+  title: "Om Salunke | Portfolio",
+  description:
+    "Explore the personal portfolio of Om Salunke — Fullstack developer, blockchain enthusiast, and UI/UX designer.",
+};
+
 export default function Home() {
   const [loader,setLoader]=useState(true);
   useEffect(()=>{
